@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonHoroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:onClick="buttonHoroscope"
+        app:layout_constraintTop_toBottomOf="@+id/birthTime4"
+        tools:layout_editor_absoluteX="52dp"
+        tools:text="Calculate Horoscope" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Result"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHoroscope"
+        tools:layout_editor_absoluteX="185dp" />
+
+    <EditText
+        android:id="@+id/birthTime4"
+        android:layout_width="83dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="day"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <EditText
+        android:id="@+id/birthTime5"
+        android:layout_width="83dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="192dp"
+        android:ems="10"
+        android:hint="month"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHoroscope"
+        app:layout_constraintStart_toEndOf="@+id/birthTime4" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="83dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="year"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/birthTime5"
+        tools:layout_editor_absoluteY="279dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
